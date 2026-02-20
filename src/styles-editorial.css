@@ -684,31 +684,24 @@ body {
   }
 
   .hero {
-    padding: 7rem 1.5rem 4rem;
+    padding: 8rem 1.5rem 6rem;
   }
 
   .hero-content-editorial {
     padding-left: 1.5rem;
+    max-width: 100%;
   }
 
   .hero-statement {
-    font-size: 2.5rem;
-    line-height: 1.2;
-  }
-
-  .hero-support-line {
-    font-size: 1rem;
-    margin-top: 1.5rem;
+    font-size: 3.5rem;
   }
 
   .division-section {
-    padding: 5rem 1.5rem;
-    min-height: auto;
+    padding: 8rem 1.5rem;
   }
 
   .division-content-left {
     margin-left: 5%;
-    margin-right: 0;
     max-width: 90%;
   }
 
@@ -719,104 +712,27 @@ body {
   }
 
   .division-content-center {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 90%;
   }
 
-  .division-number {
-    font-size: 3.5rem;
-  }
-
   .division-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .division-description {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .division-details {
-    gap: 0.75rem;
-  }
-
-  .division-details li {
-    font-size: 0.95rem;
-    padding: 0.75rem 0;
+    font-size: 2.75rem;
   }
 
   .compliance-editorial {
-    padding: 5rem 1.5rem;
+    padding: 8rem 1.5rem;
   }
 
   .compliance-heading {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  .compliance-standard {
-    font-size: 1.25rem;
-  }
-  
-  .compliance-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
-  }
-  
-  .compliance-status {
-    font-size: 0.85rem;
-  }
-
-  .compliance-item {
-    padding: 2rem 0;
+    font-size: 2.5rem;
   }
 
   .leadership-editorial {
-    padding: 5rem 1.5rem;
-  }
-
-  .ceo-feature {
-    padding: 0 1rem;
-    margin-bottom: 3rem;
-  }
-
-  .ceo-info-centered {
-    padding: 1.5rem 0;
+    padding: 8rem 1.5rem;
   }
 
   .ceo-name {
-    font-size: 2.25rem;
-    line-height: 1.2;
-  }
-
-  .ceo-title {
-    font-size: 1.1rem;
-  }
-
-  .team-support-text {
-    font-size: 0.95rem;
-    margin-top: 1.25rem;
-  }
-
-  .advisory-board {
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
-  }
-
-  .advisory-heading {
-    font-size: 1.1rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .advisory-name {
-    font-size: 1.35rem;
-  }
-
-  .advisory-role {
-    font-size: 0.95rem;
+    font-size: 2.75rem;
   }
 
   .footer-content {
@@ -852,16 +768,11 @@ body {
   }
 
   .nav-logo img {
-    height: 90px;
-  }
-
-  .nav-menu {
-    gap: 1rem;
-    font-size: 0.8rem;
+    height: 100px;
   }
 
   .hero {
-    padding: 6rem 1rem 3rem;
+    padding: 7rem 1rem 5rem;
   }
 
   .hero-content-editorial {
@@ -869,15 +780,11 @@ body {
   }
 
   .hero-statement {
-    font-size: 2rem;
-  }
-
-  .hero-support-line {
-    font-size: 0.9rem;
+    font-size: 3rem;
   }
 
   .division-section {
-    padding: 4rem 1rem;
+    padding: 7rem 1rem;
   }
 
   .division-content-left {
@@ -894,82 +801,28 @@ body {
     max-width: 94%;
   }
 
-  .division-number {
-    font-size: 3rem;
-  }
-
   .division-title {
-    font-size: 1.75rem;
-  }
-
-  .division-description {
-    font-size: 0.95rem;
-  }
-
-  .division-details li {
-    font-size: 0.9rem;
+    font-size: 2.5rem;
   }
 
   .compliance-editorial {
-    padding: 4rem 1rem;
+    padding: 7rem 1rem;
   }
 
   .compliance-heading {
-    font-size: 1.75rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .compliance-standard {
-    font-size: 1.1rem;
-  }
-
-  .compliance-status {
-    font-size: 0.8rem;
+    font-size: 2.25rem;
   }
 
   .leadership-editorial {
-    padding: 4rem 1rem;
+    padding: 7rem 1rem;
   }
 
   .ceo-name {
-    font-size: 2rem;
-  }
-
-  .ceo-title {
-    font-size: 1rem;
-  }
-
-  .team-support-text {
-    font-size: 0.9rem;
-  }
-
-  .advisory-heading {
-    font-size: 1rem;
-  }
-
-  .advisory-name {
-    font-size: 1.25rem;
-  }
-
-  .advisory-role {
-    font-size: 0.9rem;
+    font-size: 2.5rem;
   }
 
   .footer-container {
     padding: 0 1rem;
-  }
-
-  .footer-column h3 {
-    font-size: 0.85rem;
-  }
-
-  .footer-column p,
-  .footer-column a {
-    font-size: 0.85rem;
-  }
-
-  .footer-bottom {
-    font-size: 0.8rem;
   }
 }
 
