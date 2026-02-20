@@ -12,6 +12,15 @@ const LeadershipStack = () => {
           </div>
         </div>
 
+        {/* Advisory Board Section */}
+        <div className="advisory-board">
+          <h3 className="advisory-heading">Advisory Board Member</h3>
+          <div className="advisory-member">
+            <p className="advisory-name">Mr Sham Kissoonlall</p>
+            <p className="advisory-role">SK Group CEO</p>
+          </div>
+        </div>
+
       </div>
     </section>
   )
