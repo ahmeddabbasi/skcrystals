@@ -1,0 +1,692 @@
+/* ==========================================
+   SK CRYSTALS – PREMIUM AUTHORITY DESIGN SYSTEM
+   Institution-Grade Visual Identity
+   ========================================== */
+
+/* ==========================================
+   RESET & BASE
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #E5E5E5;
+    background: #0B0B0B;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   PREMIUM COLOR SYSTEM
+   ========================================== */
+
+:root {
+    --deep-black: #0B0B0B;
+    --matte-gold: #C9A227;
+    --deep-blue: #0E6BA8;
+    --gold-dark: #B89020;
+    --blue-glow: rgba(14, 107, 168, 0.3);
+    --gold-glow: rgba(201, 162, 39, 0.2);
+    --white: #FFFFFF;
+    --grey-light: #E5E5E5;
+    --grey-medium: #A0A0A0;
+    --grey-dark: #1A1A1A;
+}
+
+/* ==========================================
+   TYPOGRAPHY SYSTEM
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--white);
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--grey-light);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   LAYOUT SYSTEM
+   ========================================== */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+section {
+    padding: 7rem 0;
+    position: relative;
+}
+
+/* ==========================================
+   HERO SECTION – INFRASTRUCTURE EXCELLENCE
+   ========================================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--deep-black);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(201, 162, 39, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: heroFadeIn 1.5s ease-out;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo-crown {
+    margin-bottom: 1.5rem;
+    position: relative;
+    animation: logoPulse 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes logoPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.logo-crown img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 20px rgba(201, 162, 39, 0.3));
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--matte-gold);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+    line-height: 1.15;
+}
+
+.hero-subtext {
+    font-size: 1.35rem;
+    color: var(--grey-light);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+/* ==========================================
+   PREMIUM BUTTON SYSTEM
+   ========================================== */
+
+.btn-primary {
+    display: inline-block;
+    background: var(--matte-gold);
+    color: var(--deep-black);
+    padding: 1.25rem 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.3);
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:hover {
+    background: var(--gold-dark);
+    box-shadow: 0 6px 30px rgba(201, 162, 39, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-primary:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ==========================================
+   THREE PILLARS SECTION
+   ========================================== */
+
+.three-pillars {
+    background: var(--deep-black);
+    padding: 8rem 0;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.pillar-block {
+    background: var(--grey-dark);
+    padding: 3rem 2.5rem;
+    position: relative;
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.pillar-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: var(--matte-gold);
+    transition: left 0.6s ease;
+}
+
+.pillar-block:hover::before {
+    left: 0;
+}
+
+.pillar-block:hover {
+    border-color: var(--matte-gold);
+    box-shadow: 0 8px 40px rgba(201, 162, 39, 0.15);
+    transform: translateY(-5px);
+}
+
+.pillar-block.hazardous-fleet {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.pillar-block.bulk-water {
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.pillar-block.ai-intelligence {
+    animation: slideInLeft 0.8s ease-out 0.4s both;
+    border-color: rgba(14, 107, 168, 0.3);
+}
+
+.pillar-block.ai-intelligence:hover {
+    border-color: var(--deep-blue);
+    box-shadow: 0 8px 40px rgba(14, 107, 168, 0.2);
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.pillar-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--matte-gold);
+}
+
+.pillar-block.ai-intelligence .pillar-icon {
+    color: var(--deep-blue);
+}
+
+.pillar-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pillar-description {
+    font-size: 1.05rem;
+    color: var(--grey-medium);
+    line-height: 1.7;
+}
+
+/* ==========================================
+   COMPLIANCE ROADMAP SECTION
+   ========================================== */
+
+.compliance-roadmap {
+    background: #0F0F0F;
+    padding: 8rem 0;
+    border-top: 1px solid rgba(201, 162, 39, 0.1);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-header h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: var(--matte-gold);
+    animation: underlineExpand 1s ease-out 0.5s forwards;
+}
+
+@keyframes underlineExpand {
+    to {
+        width: 120px;
+    }
+}
+
+.roadmap-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--grey-dark);
+    border-left: 4px solid transparent;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.roadmap-item:nth-child(1) { animation-delay: 0.1s; }
+.roadmap-item:nth-child(2) { animation-delay: 0.2s; }
+.roadmap-item:nth-child(3) { animation-delay: 0.3s; }
+.roadmap-item:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.roadmap-item.status-pending {
+    border-left-color: var(--matte-gold);
+}
+
+.roadmap-item.status-progress {
+    border-left-color: var(--deep-blue);
+}
+
+.roadmap-item.status-implementation {
+    border-left-color: var(--matte-gold);
+}
+
+.roadmap-badge {
+    min-width: 200px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-right: 2rem;
+}
+
+.roadmap-status {
+    flex: 1;
+}
+
+.status-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+
+.status-pending .status-label {
+    color: var(--matte-gold);
+}
+
+.status-progress .status-label {
+    color: var(--deep-blue);
+}
+
+.status-implementation .status-label {
+    color: var(--matte-gold);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--deep-blue);
+    border-radius: 4px;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 0;
+}
+
+.roadmap-item.visible .progress-fill {
+    width: var(--progress-width);
+}
+
+.pulse-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--matte-gold);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 10px var(--matte-gold);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+}
+
+/* ==========================================
+   STRATEGIC LEADERSHIP STACK
+   ========================================== */
+
+.leadership-stack {
+    background: var(--deep-black);
+    padding: 8rem 0;
+}
+
+.leadership-grid {
+    max-width: 900px;
+    margin: 4rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.leader-card {
+    background: var(--grey-dark);
+    padding: 2.5rem 3rem;
+    border-left: 3px solid rgba(201, 162, 39, 0.3);
+    position: relative;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: staggerFadeUp 0.6s ease forwards;
+}
+
+.leader-card:nth-child(1) { animation-delay: 0.1s; }
+.leader-card:nth-child(2) { animation-delay: 0.2s; }
+.leader-card:nth-child(3) { animation-delay: 0.3s; }
+.leader-card:nth-child(4) { animation-delay: 0.4s; }
+.leader-card:nth-child(5) { animation-delay: 0.5s; }
+.leader-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes staggerFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.leader-card.ceo {
+    border-left-width: 4px;
+    border-left-color: var(--matte-gold);
+    background: linear-gradient(135deg, #1A1A1A 0%, var(--grey-dark) 100%);
+    box-shadow: 0 4px 30px rgba(201, 162, 39, 0.15);
+}
+
+.leader-card.ceo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--matte-gold), transparent);
+}
+
+.leader-card:hover {
+    border-left-color: var(--matte-gold);
+    transform: translateX(10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.leader-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.leader-title {
+    font-size: 1.1rem;
+    color: var(--matte-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.leader-card.ceo .leader-title {
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   FOOTER ARCHITECTURE
+   ========================================== */
+
+.footer {
+    background: #000000;
+    padding: 5rem 0 2rem;
+    border-top: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    color: var(--matte-gold);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.footer-column p,
+.footer-column a {
+    color: var(--grey-medium);
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: var(--matte-gold);
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--matte-gold), transparent);
+    margin: 3rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: var(--grey-medium);
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   STICKY CTA
+   ========================================== */
+
+.sticky-cta {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sticky-cta.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sticky-cta .btn-primary {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 30px rgba(201, 162, 39, 0.4);
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1200px) {
+    .pillars-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    section {
+        padding: 4rem 0;
+    }
+    
+    .hero-headline {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtext {
+        font-size: 1.2rem;
+    }
+    
+    .logo-crown {
+        margin-bottom: 1.25rem;
+    }
+    
+    .logo-crown img {
+        max-width: 180px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .sticky-cta {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
