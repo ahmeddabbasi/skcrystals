@@ -700,6 +700,15 @@ body {
     padding: 8rem 1.5rem;
   }
 
+  /* Fix backgrounds for mobile - scroll instead of fixed for better compatibility */
+  .division-hazardous,
+  .division-water,
+  .division-ai {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+  }
+
   .division-content-left {
     margin-left: 5%;
     max-width: 90%;
