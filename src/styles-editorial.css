@@ -25,6 +25,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
   color: var(--deep-black);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
@@ -662,7 +664,7 @@ body {
   .nav-container {
     flex-direction: column;
     gap: 0.75rem;
-    padding: 0.75rem;
+    padding: 1rem 1.5rem;
   }
 
   .nav-logo img {
@@ -673,22 +675,31 @@ body {
   .nav-menu {
     gap: 1.5rem;
     font-size: 0.85rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-menu a {
+    padding: 0.5rem 1rem;
   }
 
   .hero {
-    padding: 6rem 1.5rem 4rem;
+    padding: 7rem 1.5rem 4rem;
   }
 
   .hero-content-editorial {
     padding-left: 0;
+    text-align: center;
   }
 
   .hero-statement {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
 
   .hero-support-line {
     font-size: 1rem;
+    margin-top: 1.5rem;
   }
 
   .division-section {
@@ -707,14 +718,30 @@ body {
   .division-content-center {
     margin-left: 0;
     margin-right: 0;
+    max-width: 100%;
+  }
+
+  .division-number {
+    font-size: 3.5rem;
   }
 
   .division-title {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .division-description {
     font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .division-details {
+    gap: 0.75rem;
+  }
+
+  .division-details li {
+    font-size: 0.95rem;
+    padding: 0.75rem 0;
   }
 
   .compliance-editorial {
@@ -723,6 +750,7 @@ body {
 
   .compliance-heading {
     font-size: 2rem;
+    margin-bottom: 3rem;
   }
 
   .compliance-standard {
@@ -739,12 +767,17 @@ body {
     font-size: 0.85rem;
   }
 
+  .compliance-item {
+    padding: 2rem 0;
+  }
+
   .leadership-editorial {
     padding: 5rem 1.5rem;
   }
 
   .ceo-feature {
     padding: 0 1rem;
+    margin-bottom: 3rem;
   }
 
   .ceo-info-centered {
@@ -752,7 +785,35 @@ body {
   }
 
   .ceo-name {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .ceo-title {
+    font-size: 1.1rem;
+  }
+
+  .team-support-text {
+    font-size: 0.95rem;
+    margin-top: 1.25rem;
+  }
+
+  .advisory-board {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .advisory-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .advisory-name {
+    font-size: 1.35rem;
+  }
+
+  .advisory-role {
+    font-size: 0.95rem;
   }
 
   .footer-content {
@@ -769,4 +830,148 @@ body {
   .footer-container {
     padding: 0 1.5rem;
   }
+
+  .footer-column {
+    margin-bottom: 1rem;
+  }
+
+  .nav-menu a,
+  .footer-column a {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
 }
+
+/* Extra Small Devices (Phones in Portrait) */
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-logo img {
+    height: 90px;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .hero-statement {
+    font-size: 2rem;
+  }
+
+  .hero-support-line {
+    font-size: 0.9rem;
+  }
+
+  .division-section {
+    padding: 4rem 1rem;
+  }
+
+  .division-number {
+    font-size: 3rem;
+  }
+
+  .division-title {
+    font-size: 1.75rem;
+  }
+
+  .division-description {
+    font-size: 0.95rem;
+  }
+
+  .division-details li {
+    font-size: 0.9rem;
+  }
+
+  .compliance-editorial {
+    padding: 4rem 1rem;
+  }
+
+  .compliance-heading {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .compliance-standard {
+    font-size: 1.1rem;
+  }
+
+  .compliance-status {
+    font-size: 0.8rem;
+  }
+
+  .leadership-editorial {
+    padding: 4rem 1rem;
+  }
+
+  .ceo-name {
+    font-size: 2rem;
+  }
+
+  .ceo-title {
+    font-size: 1rem;
+  }
+
+  .team-support-text {
+    font-size: 0.9rem;
+  }
+
+  .advisory-heading {
+    font-size: 1rem;
+  }
+
+  .advisory-name {
+    font-size: 1.25rem;
+  }
+
+  .advisory-role {
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+
+  .footer-column h3 {
+    font-size: 0.85rem;
+  }
+
+  .footer-column p,
+  .footer-column a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+/* Landscape Orientation Optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 4rem 2rem 3rem;
+  }
+
+  .division-section {
+    min-height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .nav-container {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .nav-logo img {
+    height: 70px;
+  }
+}
+
+  
+
