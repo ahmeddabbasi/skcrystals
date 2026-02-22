@@ -12,6 +12,30 @@ const LeadershipStack = () => {
           </div>
         </div>
 
+        {/* Executive Team Section */}
+        <div className="executive-team-list">
+          <div className="team-member">
+            <p className="member-name">Neetesh Jugmohan</p>
+            <p className="member-role">Chief Operating Officer</p>
+          </div>
+          <div className="team-member">
+            <p className="member-name">Jhiya Jugmohan</p>
+            <p className="member-role">Executive Marketing Director</p>
+          </div>
+          <div className="team-member">
+            <p className="member-name">Shane Verden</p>
+            <p className="member-role">Head of Digital & Fleet Intelligence</p>
+          </div>
+          <div className="team-member">
+            <p className="member-name">Sarah Perumal</p>
+            <p className="member-role">Operations Manager</p>
+          </div>
+          <div className="team-member">
+            <p className="member-name">Violet Nalliah</p>
+            <p className="member-role">HSSE / Compliance</p>
+          </div>
+        </div>
+
         {/* Advisory Board Section */}
         <div className="advisory-board">
           <h3 className="advisory-heading">Advisory Board Member</h3>
