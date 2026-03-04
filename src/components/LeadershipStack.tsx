@@ -32,7 +32,7 @@ const LeadershipStack = () => {
           </div>
           <div className="team-member">
             <p className="member-name">Violet Nalliah</p>
-            <p className="member-role">Manager</p>
+            <p className="member-role">HSSE and Compliance manager</p>
           </div>
         </div>
 
